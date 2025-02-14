@@ -6,20 +6,22 @@
     <title>Projeto GitHub - Perfis dos Alunos</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #222;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #4CAF50;
+            background: #F535AA;
             color: white;
-            padding: 15px;
+            padding: 16px;
             text-align: center;
         }
         main {
             padding: 20px;
             text-align: center;
+            display: flex;
+            gap: 4px;
         }
         .perfil-container {
             display: flex;
@@ -28,22 +30,24 @@
         }
         .perfil {
             background: white;
-            padding: 15px;
+            padding: 16px;
             margin: 10px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            box-shadow: 0px 0px 10px rgba(120, 120, 120, 0.1);
             text-align: center;
             width: 250px;
+            border:  rgba(120, 120, 120, 0.8) solid 2px;
         }
         .foto {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
+            width: 200px;
+            height: 200px;
             object-fit: cover;
             margin-bottom: 10px;
+            border-radius: 50%;
+            border: 2px solid #222;
         }
         .btn {
-            background-color: #4CAF50;
+            background: #F535AA;
             color: white;
             padding: 10px 20px;
             border: none;
@@ -52,9 +56,12 @@
             display: inline-block;
             margin-top: 10px;
             border-radius: 5px;
+            margin-bottom: 72px;
+            transition: 0.25s;
         }
         .btn:hover {
-            background-color: #45a049;
+            background: #F535BB;
+            letter-spacing: 2px;
         }
         footer {
             background-color: #333;
@@ -65,6 +72,20 @@
             bottom: 0;
             width: 100%;
         }
+
+        section {
+            padding: 16px;
+        }
+
+        .photos {
+            display: flex;
+            justify-content: center;
+        }
+
+        .info {
+            background-color: #fafafa;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
@@ -74,64 +95,49 @@
 </header>
 
 <main>
-    <section>
+    <section class="info">
         <h2>Sobre o Projeto</h2>
-        <p>Este projeto tem como objetivo entender o fluxo de trabalho do GitHub, incluindo a criaÃ§Ã£o de branches, commits, Pull Requests e revisÃµes de cÃ³digo.</p>
+        <p>Este projeto tem como objetivo entender o fluxo de trabalho do GitHub, incluindo a criação de branches, commits, Pull Requests e revisões de código.</p>
     </section>
 
     <section>
-        <h2>Perfis dos Alunos</h2>
-        <div class="perfil-container">
-            <div class="perfil">
-                <img class="foto" src="images/Rectangle.png" alt="Foto do Aluno">
-                <h3>Clara Bartolini Moreira</h3>
-                <p>Germinare Tech - DEV</p>
-                <p><a href="https://github.com/clarabartolini" target="_blank">GitHub</a></p>
+        <h2 style="color: white;">Perfis dos Alunos</h2>
+        <div class="photos">
+            <div class="perfil-container">
+                <div class="perfil">
+                    <img class="foto" src="images/Rectangle.png" alt="Foto do Aluno">
+                    <h3>Clara Bartolini Moreira</h3>
+                    <p>Germinare Tech - DEV</p>
+                    <p><a href="https://github.com/clarabartolini" target="_blank">GitHub</a></p>
+                </div>
+            </div>
+            <div class="perfil-container">
+                <div class="perfil">
+                    <img class="foto" src="images/hideki.jpg" alt="Foto do Aluno">
+                    <h3>Matheus Hideki Oshiro Ueno</h3>
+                    <p>Curso: Germinare Tech - DEV </p>
+                    <p><a href="https://github.com/Hideki1202" target="_blank">GitHub</a></p>
+                </div>
+            </div>
+            <div class="perfil-container">
+                <div class="perfil">
+                    <img class="foto" src="images/MateusMCA.jpeg" alt="Foto do Aluno">
+                    <h3>Mateus Mancini Araujo</h3>
+                    <p>Curso: Germinare Tech - DEV</p>
+                    <p><a href="https://github.com/Mateus-MCA" target="_blank">GitHub</a></p>
+                </div>
+            </div>
+            <div class="perfil-container">
+                <div class="perfil">
+                    <img class="foto" src="./images/isa.png" alt="Foto do Aluno">
+                    <h3>Isabela Neu</h3>
+                    <p>Curso: Germinare Tech - DEV </p>
+                    <p><a href="https://github.com/isabelaneu" target="_blank">GitHub</a></p>
+                </div>
             </div>
         </div>
-        <p>Cada aluno deve copiar e editar um bloco acima com suas informaÃ§Ãµes.</p>
+        <button class="btn">Saiba mais sobre GitHub</button>
     </section>
-    
-    <section>
-        <h2>Perfis dos Alunos</h2>
-        <div class="perfil-container">
-            <div class="perfil">
-                <img class="foto" src="images/hideki.jpg" alt="Foto do Aluno">
-                <h3>Matheus Hideki Oshiro Ueno</h3>
-                <p>Curso: Germinare Tech - DEV </p>
-                <p><a href="https://github.com/Hideki1202" target="_blank">GitHub</a></p>
-            </div>
-        </div>
-        <p>Cada aluno deve copiar e editar um bloco acima com suas informaÃ§Ãµes.</p>
-    </section>
-    
-    <section>
-        <h2>Perfis dos Alunos</h2>
-        <div class="perfil-container">
-            <div class="perfil">
-                <img class="foto" src="[URL da foto do aluno]" alt="Foto do Aluno">
-                <h3>Nome do Aluno</h3>
-                <p>Curso: [Nome do Curso]</p>
-                <p><a href="[URL do GitHub]" target="_blank">GitHub</a></p>
-            </div>
-        </div>
-        <p>Cada aluno deve copiar e editar um bloco acima com suas informaÃ§Ãµes.</p>
-    </section>
-    
-    <section>
-        <h2>Perfis dos Alunos</h2>
-        <div class="perfil-container">
-            <div class="perfil">
-                <img class="foto" src="./images/isa.png" alt="Foto do Aluno">
-                <h3>Isabela Neu</h3>
-                <p>Curso: Germinare Tech - DEV </p>
-                <p><a href="https://github.com/isabelaneu" target="_blank">GitHub</a></p>
-            </div>
-        </div>
-        <p>Cada aluno deve copiar e editar um bloco acima com suas informaÃ§Ãµes.</p>
-    </section>
-
-    <button class="btn">Saiba mais sobre GitHub</button>
 </main>
 
 <footer>
