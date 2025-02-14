@@ -6,7 +6,7 @@
     <title>Projeto GitHub - Perfis dos Alunos</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             background-color: #222;
             margin: 0;
             padding: 0;
@@ -14,14 +14,14 @@
         header {
             background: #F535AA;
             color: white;
-            padding: 15px;
+            padding: 16px;
             text-align: center;
         }
         main {
             padding: 20px;
             text-align: center;
             display: flex;
-            gap: 16px;
+            gap: 4px;
         }
         .perfil-container {
             display: flex;
@@ -30,12 +30,13 @@
         }
         .perfil {
             background: white;
-            padding: 15px;
+            padding: 16px;
             margin: 10px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            box-shadow: 0px 0px 10px rgba(120, 120, 120, 0.1);
             text-align: center;
             width: 250px;
+            border:  rgba(120, 120, 120, 0.8) solid 2px;
         }
         .foto {
             width: 200px;
@@ -56,9 +57,11 @@
             margin-top: 10px;
             border-radius: 5px;
             margin-bottom: 72px;
+            transition: 0.25s;
         }
         .btn:hover {
             background: #F535BB;
+            letter-spacing: 2px;
         }
         footer {
             background-color: #333;
@@ -81,6 +84,7 @@
 
         .info {
             background-color: #fafafa;
+            border-radius: 4px;
         }
     </style>
 </head>
@@ -101,18 +105,18 @@
         <div class="photos">
             <div class="perfil-container">
                 <div class="perfil">
-                    <img class="foto" src="[URL da foto do aluno]" alt="Foto do Aluno">
-                    <h3>Nome do Aluno</h3>
-                    <p>Curso: [Nome do Curso]</p>
-                    <p><a href="[URL do GitHub]" target="_blank">GitHub</a></p>
+                    <img class="foto" src="images/Rectangle.png" alt="Foto do Aluno">
+                    <h3>Clara Bartolini Moreira</h3>
+                    <p>Germinare Tech - DEV</p>
+                    <p><a href="https://github.com/clarabartolini" target="_blank">GitHub</a></p>
                 </div>
             </div>
             <div class="perfil-container">
                 <div class="perfil">
-                    <img class="foto" src="[URL da foto do aluno]" alt="Foto do Aluno">
-                    <h3>Nome do Aluno</h3>
-                    <p>Curso: [Nome do Curso]</p>
-                    <p><a href="[URL do GitHub]" target="_blank">GitHub</a></p>
+                    <img class="foto" src="images/hideki.jpg" alt="Foto do Aluno">
+                    <h3>Matheus Hideki Oshiro Ueno</h3>
+                    <p>Curso: Germinare Tech - DEV </p>
+                    <p><a href="https://github.com/Hideki1202" target="_blank">GitHub</a></p>
                 </div>
             </div>
             <div class="perfil-container">
@@ -125,14 +129,13 @@
             </div>
             <div class="perfil-container">
                 <div class="perfil">
-                    <img class="foto" src="[URL da foto do aluno]" alt="Foto do Aluno">
-                    <h3>Nome do Aluno</h3>
-                    <p>Curso: [Nome do Curso]</p>
-                    <p><a href="[URL do GitHub]" target="_blank">GitHub</a></p>
+                    <img class="foto" src="./images/isa.png" alt="Foto do Aluno">
+                    <h3>Isabela Neu</h3>
+                    <p>Curso: Germinare Tech - DEV </p>
+                    <p><a href="https://github.com/isabelaneu" target="_blank">GitHub</a></p>
                 </div>
             </div>
         </div>
-        <p style="color: white;">Cada aluno deve copiar e editar um bloco acima com suas informações.</p>
         <button class="btn">Saiba mais sobre GitHub</button>
     </section>
 </main>
